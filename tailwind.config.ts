@@ -81,7 +81,7 @@ const config: Config = {
   					transform: 'translateZ(0) rotate(360deg)'
   				}
   			},
-  			shine: {
+  			'shine': {
   				'0%': {
   					'background-position': '0% 0%'
   				},
@@ -91,7 +91,17 @@ const config: Config = {
   				to: {
   					'background-position': '0% 0%'
   				}
-  			}
+  			},
+			'slide-down': {
+				from: {
+				  opacity: '0',
+				  transform: 'translateY(-10%)'
+				},
+				to: {
+				  opacity: '1',
+				  transform:' translateY(0)'
+				}
+			  }
   		}
   	}
   },

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Web = () => {
+const SEO = () => {
   return (
-    <div>Web</div>
+    <div>SEO</div>
   )
 }
 
-export default Web
+export default SEO
