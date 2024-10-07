@@ -6,6 +6,7 @@ import Navbar from "@/components/ui/navbar";
 import Image from "next/image";
 import Footer from "@/components/footer";
 import HamburgerMenu from "@/components/hamburgermenu";
+import GradualSpacing from "@/components/ui/gradual-spacing";
 
 interface Service {
   title: string;
@@ -116,7 +117,7 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-white shadow-sm">
+      <header >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Navbar />
           <div className="md:hidden mt-4">
@@ -126,10 +127,15 @@ const ServicesPage: React.FC = () => {
       </header>
 
       <main className="flex-grow">
-        <div className="bg-blue-600 text-white py-16">
-          <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-center">Our Services</h1>
-          </div>
+          <div className="container mx-auto px-4 m-5">
+          <GradualSpacing
+            className="font-display text-center text-4xl font-bold -tracking-widest  text-black dark:text-white md:text-7xl md:leading-[5rem]"
+            text="Our Services"
+          />
+          <GradualSpacing
+              className="font-display text-center text-base font-medium text-gray-400 md:text-xl md:leading-relaxed max-w-3xl "
+              text="All of our services are designed to help your business stand out"
+          />
         </div>
         {services.map((service, index) => (
           <ServiceCard
